@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/vehicleTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тип на возило:"
+        android:textColor="@color/orange"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена: "
+        android:textColor="@color/orange"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/startLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Почетна локација: "
+        android:textColor="@color/orange"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/endLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Крајна локација: "
+        android:textColor="@color/orange"
+        android:textSize="16sp"/>
+
+</LinearLayout>

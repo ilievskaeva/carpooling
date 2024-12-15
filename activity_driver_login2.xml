@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Најава на возач"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="e-mail"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/drivingTimeEditText"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Почеток на возење (време)"
+        android:inputType="time"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/drivingTimeEditText2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Крај на возење (време)"
+        android:textSize="22sp"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Цена"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/vehicleTypeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="Тип на возило"
+        android:textSize="25sp"
+        />
+
+    <fragment
+        android:id="@+id/map2"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_marginTop="16dp"
+        tools:context=".DriverLoginActivity"
+        tools:layout="@layout/activity_driver_login2" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Најави се"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
